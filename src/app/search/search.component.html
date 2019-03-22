@@ -1,0 +1,36 @@
+<br>
+<p class="wordmeee">
+  Need Music?
+</p>
+<p class="wordgentle">
+Please enter the album or the artist name below!
+</p>
+<form>
+    <div class="form-group">
+        <div class="halfpagee">  
+            <input 
+            type="text" 
+            class="form-control" 
+            placeholder="e.g - Justin Beiber" 
+            [(ngModel)]="searchStr"
+            [ngModelOptions]="{ standalone: true }"
+            >
+          </div>
+      <div class="quatpagee">
+        <button 
+        type="submit" 
+        class="btn btn-success"
+        name="submit"
+        value="submit"
+        (click)="searchMusic()"
+        >Submit</button>
+      </div>
+    </div>
+</form>
+<div class="quatpageer colorwhite">
+<ng-container *ngIf="listOfMusic !== null">
+  <div *ngFor="let artist of listOfMusic">
+    <p>Profile of {{ artist.name }}</p>
+    <p>Genres: {{ artist.genres }}</p>
+  </div>
+</ng-container></div>

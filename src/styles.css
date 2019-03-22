@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: mont;
+    src: url(assets/font/Montserrat-Bold.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: mont1;
+    src: url(assets/font/Montserrat-Regular.ttf) format("opentype");
+  }
+
+.wordmeh {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'mont';
+    color: white;
+  }
+
+  .wordgentle {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'mont1';
+  
+  }
+
+  .halfpagee{
+      width: 50%;
+      float: left;
+  }
+
+  .quatpagee{
+    width: 25%;
+    float: left;
+}
+  .quatpageer{
+    width: 25%;
+    float: right;
+}
+
+.colorwhite{
+  background-color: white;
+  color: black;
+}
+
+  .wordmeee {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'mont';
+    font-size: 28pt;
+    color: white;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("assets/img/bgpicdone.jpg");
+  
+    /* Full height */
+    height: 62%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
